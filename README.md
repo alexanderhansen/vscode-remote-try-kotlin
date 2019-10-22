@@ -29,3 +29,9 @@ Follow these steps to open this sample in a container:
    - Clone this repository.
    - Press <kbd>F1</kbd> and select the **Remote-Containers: Open Folder in Container...** command.
    - Select the cloned copy of this folder, wait for the container to start, and try things out!
+
+## First steps ##
+
+Examples are from Venkat Subramanhiams Programming Kotlin book.
+
+Open the firststeps folder and run `kotlinc-jvm Hello.kt -d Hello.jar` and build a JAVA jar file that you can run with `java -jar Hello.jar`, call the class directly as in `java -classpath Hello.jar HelloKt` or use the `kotlin` tool instead: `kotlin -classpath Hello.jar HelloKt`

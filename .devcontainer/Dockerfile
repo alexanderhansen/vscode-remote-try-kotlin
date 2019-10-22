@@ -6,6 +6,7 @@ ARG USER_UID=1001
 ARG USER_GID=$USER_UID
 
 ENV SDKMAN_DIR /usr/local/sdkman
+ENV KOTLIN_PATH ${SDKMAN_DIR}/candidates/kotlin/current/
 
 RUN set -o errexit -o nounset \
     && echo "Adding vscode user and group" \
