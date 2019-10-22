@@ -9,6 +9,14 @@ It also uses JDK version 12.
 
 This is a sample project that lets you try out the **[VS Code Remote - Containers](https://aka.ms/vscode-remote/containers)** extension in a few easy steps.
 
+## Challenges ##
+
+SDKMAN! comes with a `sdkman-init.sh` script the sets up the environment for the packages installed by SDKMAN! The file has to be sourced in the current `/bin/bash` which runs inside VS Code. I expected several options to work:
+
+1. Use the CMD directive in the Dockerfile. This is the command that gets executed when the container started. Didn't work...
+2. In `devcontainer.json` you find the option `postCreateCommand` where I put the source command. Didn't work either
+3. I echoed the source command into `.bashrc` file in the vscode users home. Feels kinda hacky, but maybe you have a better idea. PRs are happily accepted.
+
 ## Setting up the development container
 
 Follow these steps to open this sample in a container:
