@@ -2,9 +2,10 @@
 
 Ideas are based on the official **[VS Code Remote Try Java Project](https://github.com/microsoft/vscode-remote-try-java)**
 
-The docker image is based on the ideas from VS Codes java project, but I wanted to try gradle instead. Also it uses JDK12. 
+The docker image is based on the ideas from the VS Code java project, but I wanted to try gradle instead. 
+It also uses JDK version 12. 
 
-SDKman is used to install kotlin in the container, inspiration for this is from the **[docker-sdkman](https://github.com/donbeave/docker-sdkman)** project.
+**[SDKMAN!](https://sdkman.io)** is used to install kotlin in the container, inspiration for this is from the **[docker-sdkman](https://github.com/donbeave/docker-sdkman)** project.
 
 This is a sample project that lets you try out the **[VS Code Remote - Containers](https://aka.ms/vscode-remote/containers)** extension in a few easy steps.
 
