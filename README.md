@@ -11,7 +11,7 @@ This is a sample project that lets you try out the **[VS Code Remote - Container
 
 ## Challenges ##
 
-SDKMAN! comes with a `sdkman-init.sh` script the sets up the environment for the packages installed by SDKMAN! The file has to be sourced in the current `/bin/bash` which runs inside VS Code. I expected several options to work:
+SDKMAN! comes with a `sdkman-init.sh` script that sets up the environment for the packages installed by SDKMAN! The file has to be sourced in the current `/bin/bash` which runs inside VS Code. I expected several options to work:
 
 1. Use the CMD directive in the Dockerfile. This is the command that gets executed when the container started. Didn't work...
 2. In `devcontainer.json` you find the option `postCreateCommand` where I put the source command. Didn't work either
