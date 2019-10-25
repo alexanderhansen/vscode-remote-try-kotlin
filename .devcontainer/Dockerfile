@@ -30,6 +30,7 @@ RUN set -x \
     && echo "sdkman_auto_selfupdate=false" >> $SDKMAN_DIR/etc/config \
     && echo "sdkman_insecure_ssl=false" >> $SDKMAN_DIR/etc/config \
     && chmod a+x "$SDKMAN_DIR/bin/sdkman-init.sh" \
-    && echo "source $SDKMAN_DIR/bin/sdkman-init.sh" >> /home/vscode/.bashrc
+    && echo "source $SDKMAN_DIR/bin/sdkman-init.sh" >> /home/vscode/.bashrc \
+    && echo "alias kts='java -jar $KOTLIN_PATH/lib/kotlin-compiler.jar -script'" >> /home/vscode/.bashrc
 
 RUN ["/bin/bash", "-c", "source $SDKMAN_DIR/bin/sdkman-init.sh && sdk install kotlin"]
