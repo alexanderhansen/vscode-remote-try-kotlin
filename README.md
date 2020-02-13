@@ -37,6 +37,7 @@ Examples are from Venkat Subramaniam Programming Kotlin book.
 Open the firststeps folder and run `kotlinc-jvm Hello.kt -d Hello.jar` and build a JAVA jar file that you can run with `java -jar Hello.jar`, call the class directly as in `java -classpath Hello.jar HelloKt` or use the `kotlin` tool instead: `kotlin -classpath Hello.jar HelloKt`
 
 ### Scripting ###
-**Due to a [bug](https://youtrack.jetbrains.com/issue/KT-33529) in Kotlin 1.3.50 you cannot run kotlin scripts (.kts files) like intended: `kotlinc-jvm -script script.kts` and of course also not using the sheband facility.**
+Runnable kotlin scripts. Files are executable, using the shebang facilities.
+Alternatively run with: `kotlinc-jvm -script script.kts`
 
-As a workaround I put the alias `kts` into the vscode users `.bashrc` file so that you can simply execute any script with `kts script.kts`.
+If all else fails: I put the alias `kts` into the vscode users `.bashrc` file so that you can simply execute any script with `kts script.kts`.

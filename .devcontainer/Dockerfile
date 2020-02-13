@@ -1,4 +1,4 @@
-FROM gradle:jdk12
+FROM gradle:jdk13
 
 # Or your actual UID, GID on Linux
 ARG USERNAME=vscode
