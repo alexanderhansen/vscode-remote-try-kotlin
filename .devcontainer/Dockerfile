@@ -23,7 +23,7 @@ RUN set -x \
     && apt-get install -y unzip zip --no-install-recommends \
     && rm -rf /var/lib/apt/lists/*
 
-RUN curl -s get.sdkman.io | bash
+RUN curl -s "https://get.sdkman.io" | bash
 
 RUN set -x \
     && echo "sdkman_auto_answer=true" > $SDKMAN_DIR/etc/config \
